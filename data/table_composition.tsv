@@ -1,0 +1,22 @@
+Organization	Project	Buffy Coat	Circulating Tumor Cell (CTC)	Control Analyte	Human Original Cells	Peripheral Blood Components NOS	Peripheral Blood Nucleated Cells	Peripheral Whole Blood	Plasma	Serum	Solid Tissue	Unknown
+AstraZeneca	AstraZeneca_P0001_T1	0	0	0	0	20	0	0	20	0	19	0
+Biodesix	Biodesix_P0001_T1	0	0	0	0	0	0	0	0	730	0	0
+CytoLumina	CytoLumina_P0001_T1	0	0	0	0	0	35	0	0	0	0	0
+EpicSciences	EpicSciences_P001_T1	0	0	0	0	0	40	0	0	0	0	0
+FoundationMedicine	FoundationMedicine_ClinAV_T1	0	0	0	0	0	0	4	193	0	0	15
+GenomicHealth	GenomicHealth_P0001_T1	0	0	3	0	0	0	0	71	0	0	0
+Guardant	Guardant_P0001_T1	0	0	0	0	0	0	0	500	0	0	0
+MSKCC	MSKCC_P0001_T1	0	0	0	0	0	0	40	0	0	0	0
+MSKCC	MSKCC_P0002_T1	0	0	0	0	0	0	0	0	0	0	0
+MSKCC	MSKCC_P0003_T1	0	0	0	0	0	0	0	0	0	0	0
+MSKCC	MSKCC_P0004_T1	0	0	0	0	0	0	0	0	0	0	0
+Novartis	Novartis_Contrived1_T1	0	0	0	0	0	0	0	42	0	0	0
+Novartis	Novartis_Contrived2_T1	0	0	0	0	0	0	0	0	0	0	0
+PersonalGenome	PersonalGenome_Beta1	0	0	0	0	0	0	0	0	0	0	0
+Provista	Provista_P0001_T1	0	0	0	0	0	0	0	0	18	0	0
+ThermoFisher	ThermoFisher_P0001_T1	0	0	4	0	0	0	0	0	0	0	0
+ThermoFisher	ThermoFisher_P0002_T1	0	0	0	8	8	0	0	0	0	0	0
+UAMS	UAMS_P0001_T1	8	0	0	0	0	0	0	0	0	8	0
+UMich	UMich_P0001_T1	0	0	0	0	0	0	0	52	0	0	0
+UMich	UMich_P0002_T1	0	0	0	0	0	0	0	90	0	0	0
+USC	USC_OPT1_T1	0	317	0	0	0	0	0	0	0	0	0

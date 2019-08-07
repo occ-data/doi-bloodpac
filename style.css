@@ -24,7 +24,7 @@ th
 td
 {
 	padding: 8px;
-	background: #d2d2d2; 
+	background: #d2d2d2;
 	border-bottom: 1px solid #fff;
 	color: #000;
 	border-top: 1px solid transparent;
@@ -61,7 +61,7 @@ button.accordion {
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 button.accordion.active, button.accordion:hover {
     background-color: #ddd;
-    padding: 18px;    
+    padding: 18px;
     color: #444;
 }
 
@@ -87,4 +87,9 @@ button.accordion.active:after {
 a.showplot {
     padding: 18px;
     font-size: 18px;
+}
+
+a {
+	padding: 18px 0;
+	font-size: 18px;
 }
