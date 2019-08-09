@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+  <identifier identifierType="DOI">10.25638/bloodpac.0001</identifier>
+  <creators>
+    <creator>
+      <creatorName>BloodPAC</creatorName>
+      <affiliation>Open Commons Consortium</affiliation>
+    </creator>
+  </creators>
+  <titles>
+    <title xml:lang="en-us">Minimal Technical Data Elements Summary Matrices</title>
+    <title xml:lang="en-us" titleType="Subtitle">Summary tables or graphs of pre-analytical Minimal Technical Data Elements from the BloodPAC Data Commons</title>
+  </titles>
+  <publisher>Center for Computational Science Research Inc.</publisher>
+  <publicationYear>2018</publicationYear>
+  <contributors>
+    <contributor contributorType="DataCurator">
+      <contributorName>BloodPAC</contributorName>
+      <affiliation>Open Commons Consortium</affiliation>
+    </contributor>
+  </contributors>
+  <dates>
+    <date dateType="Available">2018-02-01</date>
+  </dates>
+  <language>en-us</language>
+  <resourceType resourceTypeGeneral="InteractiveResource">Counts by data submission project, including data visualizations.   Includes links to download dataset.</resourceType>
+  <version>2.0</version>
+  <descriptions>
+    <description xml:lang="en-us" descriptionType="Other">
+      Counts of BloodPAC MTDE fields by data submission project, including data visualizations.   Includes links to download tsvs for each field.   Living document that updates as new projects are added to the BloodPAC Data Commons. For more information on the MTDEs, visit: https://www.synapse.org/#!Synapse:syn8011461/wiki/433747
+    </description>
+  </descriptions>
+</resource>
