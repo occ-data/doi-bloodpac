@@ -1,3 +1,6 @@
+language: node_js
+node_js:
+- stable
 deploy:
   provider: s3
   access_key_id: AKIAYGBT6AZEH4EYPO7O
@@ -5,4 +8,7 @@ deploy:
     secure: qreo2e7v1rpnUQ+21aT/xZUNg0gsj0qrQJOFZAmcboZAoiukL7Ayy1CrSg2SE9FesSs5A+55QT7yOsDwn548InOEabPcVC+ytmVx8+RcyW77a/74o6YuTd6OodKnis0LAFZEH1UdQ5LonbBf7gcgLVzZBETXs4Pmx7x0XUWrQ6iEcVDBXxlF+bP3nWU+K46qnYVL4lC1hkozoAzQeqBta7/b6eKrkBO6XFj3Inpque4Yjklj/0zGA8vOzb840u1m/GVjRzbJ1gF1Po63Fh5RQQkWxUlfMXv7rUTGqS28A/jrTJ6uybFAOdfXEAI1/OgkR8J9T3TGWsGaK2ux6emX0s/pctd93CGFy1NLHdDI6ZDH2nDzRTtr/dPT7Ly62O8MQYTnenK4lxqSTjNtJxdzrhOJ681hVUFAVYiDHNBlsk+KfubACbUM6c5v4URfWv9Kjbc1fugA1S3PHN4mDJUpSpBnYTeWSbF3J2YIiDarA9rEWtod8EJm4Cmb0VPC3HxaiC6QXDGIsIq4Ff+zFb/i83lO3DaogF+P7DAFDyk9j+/rg8PhBmZ+DLL2CbCVdjUAEgB5HM6t0zDgPbxmdUuFAq9oQwHZaEV2Lcy8q2XUGZZz9RKPQWWjaDfFTA2g6xQ7/5FOispmvGZimqIQ2K+1SmfoTTnHei7m03wufjoUx/I=
   bucket: doi.bloodpac.org
   skip_cleanup: true
-  acl: public_read
+  acl: pubilic_read
+  on:
+    repo: occ-data/doi-bloodpac
+    all_branches: true
