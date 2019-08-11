@@ -1,0 +1,22 @@
+Organization	Project	immunoassay - Enzyme-Linked Immunosorbent Assay (ELISA)	immunoassay - Immunohistochemistry	immunoassay - MALDI-TOF Mass Spectrometry	pcr_assay - Amplification-Refactory Mutation System	pcr_assay - BEAMing Digital	pcr_assay - Digital Droplet	pcr_assay - TaqMan	quantification_assay - DNA Electrophoresis	quantification_assay - Immunohistochemistry	mass_cytometry_assay - Imaging Mass Cytometry	sequencing_assay - Targeted Sequencing
+AstraZeneca	AstraZeneca_P0001_T1	0	0	0	0	0	0	0	0	0	0	0
+Biodesix	Biodesix_P0001_T1	0	0	730	0	0	0	0	0	0	0	0
+CytoLumina	CytoLumina_P0001_T1	0	20	0	0	0	0	0	0	35	0	0
+EpicSciences	EpicSciences_P001_T1	0	3712	0	0	0	0	0	0	160	0	0
+FoundationMedicine	FoundationMedicine_ClinAV_T1	0	0	0	0	0	0	0	0	0	0	371
+GenomicHealth	GenomicHealth_P0001_T1	0	0	0	0	0	0	0	0	0	0	464
+Guardant	Guardant_P0001_T1	0	0	0	0	0	0	0	0	0	0	500
+MSKCC	MSKCC_P0001_T1	0	0	0	0	0	0	0	40	0	0	0
+MSKCC	MSKCC_P0002_T1	0	0	0	0	0	0	0	0	0	0	0
+MSKCC	MSKCC_P0003_T1	0	0	0	0	0	0	0	0	0	0	0
+MSKCC	MSKCC_P0004_T1	0	0	0	0	0	0	0	0	0	0	0
+Novartis	Novartis_Contrived1_T1	0	0	0	60	60	48	24	0	0	0	66
+Novartis	Novartis_Contrived2_T1	0	0	0	0	0	0	0	0	0	0	0
+PersonalGenome	PersonalGenome_Beta1	0	0	0	0	0	0	0	0	0	0	0
+Provista	Provista_P0001_T1	4590	0	0	0	0	0	0	0	0	0	0
+ThermoFisher	ThermoFisher_P0001_T1	0	0	0	0	0	0	0	0	0	0	0
+ThermoFisher	ThermoFisher_P0002_T1	0	0	0	0	0	0	0	0	0	0	0
+UAMS	UAMS_P0001_T1	0	0	0	0	0	0	0	0	0	0	0
+UMich	UMich_P0001_T1	0	0	0	0	0	0	0	0	0	0	0
+UMich	UMich_P0002_T1	0	0	0	0	0	90	0	0	0	0	0
+USC	USC_OPT1_T1	0	59122	0	0	0	0	0	0	2536	253	0

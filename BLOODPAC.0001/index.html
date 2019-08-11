@@ -1,0 +1,970 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+      <title>BloodPAC - MTDE Summary</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon"/>
+  </head>
+  <body>
+    <div class="master-content">
+      <div class="container">
+        <div class="grid">
+          <section class="grid__col--60 grid__col--push10" role="header" id="header">
+            <h1><img src="./img/bpa-logo.png" height="64"></h1>
+            <h1>MTDE Summary Matrices</h1></section>
+            <a href="./data/bloodpac_tables.zip" class="tsv">Download TSVs as Zip</a>
+            <button class="accordion">Storage Temperature</button>
+            <div class="panel">
+              <section class="grid__col--60 grid__col--push10" role="main" id="table">
+                <a id="link_storage_temperature" href="#storage_temperature" onclick="showPlot('table_storage_temperature','plot_storage_temperature','link_storage_temperature')", class="showplot">View as a graph</a>
+                <div id="plot_storage_temperature", style="display:none">
+                  <img src="./graphs/mtde_storage_temperature.svg" alt="storage_temperature" style="width:100vw;">
+                </div>
+                <div id="table_storage_temperature">
+                  <table style = "width:100%">
+                    <thead>
+                      <tr>
+                        <th>Organization</th>
+                        <th>Project</th>
+                        <th>-80.0</th>
+                        <th>-20.0</th>
+                        <th>0.0</th>
+                        <th>4.0</th>
+                        <th>8.0</th>
+                        <th>20.0</th>
+                        <th>21.5</th>
+                        <th>22.0</th>
+                        <th>23.0</th>
+                      </tr>
+                    </thead>
+                    <tr>
+                      <th class="organization">AstraZeneca</th>
+                      <td>AstraZeneca_P0001_T1</td>
+                      <td style="min-width:150px">20</td>
+                      <td style="min-width:150px">39</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">Biodesix</th>
+                      <td>Biodesix_P0001_T1</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td style="min-width:150px">730</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">CytoLumina</th>
+                      <td>CytoLumina_P0001_T1</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td style="min-width:150px">35</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">EpicSciences</th>
+                      <td>EpicSciences_P001_T1</td>
+                      <td style="min-width:150px">80</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">FoundationMedicine</th>
+                      <td>FoundationMedicine_ClinAV_T1</td>
+                      <td style="min-width:150px">212</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">GenomicHealth</th>
+                      <td>GenomicHealth_P0001_T1</td>
+                      <td style="min-width:150px">232</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                      <td>--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">Guardant</th><td>Guardant_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">500</td><td>--</td><td>--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">Lexent</th><td>Lexent_P0001_T1 </td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">MSKCC</th><td>MSKCC_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">40</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">Novartis</th><td>Novartis_Contrived1_T1</td><td style="min-width:150px">195</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">PersonalGenomeDx</th><td>PersonalGenomeDx_P0001_T1</td><td style="min-width:150px">30</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">Provista</th><td>Provista_P0001_T1</td><td style="min-width:150px">324</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">ThermoFisher</th><td>ThermoFisher_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">9</td><td>--</td><td>--</td><td>--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">ThermoFisher</th><td>ThermoFisher_P0002_T1</td><td>--</td><td style="min-width:150px">8</td><td>--</td><td style="min-width:150px">8</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">UAMS</th><td>UAMS_P0001_T1</td><td style="min-width:150px">16</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">32</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">UMich</th><td>UMich_P0001_T1</td><td>--</td><td style="min-width:150px">52</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">UMich</th><td>UMich_P0002_T1</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">36</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">54</td><td>--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">USC</th><td>USC_OPT1_T1</td><td style="min-width:150px">977</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                    </tr>
+                    <tfoot>
+                      <th class="organization">TOTALS</th><td>18</td><td>2086</td><td>99</td><td>730</td><td>79</td><td>40</td><td>9</td><td>500</td><td>54</td><td>32</td>
+                    </tfoot>
+                  </table>
+                </div>
+                <a href="./data/table_storage_temperature.tsv">Download table to TSV file</a>
+                <br>
+              </section>
+            </div>
+            <button class="accordion">DNA Concentration</button>
+            <div class="panel">
+              <section class="grid__col--60 grid__col--push10" role="main" id="table">
+                <a id="link_molecular_concentration" href="#molecular_concentration" onclick="showPlot('table_molecular_concentration','plot_molecular_concentration','link_molecular_concentration')", class="showplot">View as a graph</a>
+                <div id="plot_molecular_concentration", style="display:none">
+                  <img src="./graphs/mtde_molecular_concentration.svg" alt="molecular_concentration" style="width:100vw;">
+                </div>
+                <div id="table_molecular_concentration">
+                  <table style = "width:100%">
+                    <thead>
+                      <tr>
+                        <th>Organization</th>
+                        <th>Project</th>
+                        <th><0.2</th>
+                        <th>[0.2-0.5[</th>
+                        <th>[0.5-1[</th>
+                        <th>[1-2[</th>
+                        <th>[2-10[</th>
+                        <th>[10-20[</th>
+                        <th>[20-100[</th>
+                        <th>>=100</th>
+                        <th>None</th>
+                      </tr>
+                    </thead>
+                    <tr>
+                      <th class="organization">AstraZeneca</th>
+                      <td>AstraZeneca_P0001_T1</td>
+                      <td style="min-width:150px">--</td>
+                      <td style="min-width:150px">1</td>
+                      <td style="min-width:150px">--</td>
+                      <td style="min-width:150px">1</td>
+                      <td style="min-width:150px">18</td>
+                      <td style="min-width:150px">7</td>
+                      <td style="min-width:150px">32</td>
+                      <td style="min-width:150px">--</td>
+                      <td style="min-width:150px">--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">Biodesix</th><td>Biodesix_P0001_T1</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">CytoLumina</th><td>CytoLumina_P0001_T1</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">EpicSciences</th><td>EpicSciences_P001_T1</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">FoundationMedicine</th><td>FoundationMedicine_ClinAV_T1</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">GenomicHealth</th><td>GenomicHealth_P0001_T1</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">41</td><td style="min-width:150px">92</td><td style="min-width:150px">99</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">Guardant</th><td>Guardant_P0001_T1</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">Lexent</th><td>Lexent_P0001_T1 </td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">MSKCC</th><td>MSKCC_P0001_T1</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">40</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">Novartis</th><td>Novartis_Contrived1_T1</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">195</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">PersonalGenomeDx</th><td>PersonalGenomeDx_P0001_T1</td><td style="min-width:150px">25</td><td style="min-width:150px">3</td><td style="min-width:150px">1</td><td style="min-width:150px">1</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">Provista</th><td>Provista_P0001_T1</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">ThermoFisher</th><td>ThermoFisher_P0001_T1</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">ThermoFisher</th><td>ThermoFisher_P0002_T1</td><td style="min-width:150px">--</td><td style="min-width:150px">1</td><td style="min-width:150px">--</td><td style="min-width:150px">2</td><td style="min-width:150px">4</td><td style="min-width:150px">3</td><td style="min-width:150px">6</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">UAMS</th><td>UAMS_P0001_T1</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">UMich</th><td>UMich_P0001_T1</td><td style="min-width:150px">8</td><td style="min-width:150px">28</td><td style="min-width:150px">6</td><td style="min-width:150px">4</td><td style="min-width:150px">5</td><td style="min-width:150px">--</td><td style="min-width:150px">1</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">UMich</th><td>UMich_P0002_T1</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td><td style="min-width:150px">--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">USC</th><td>USC_OPT1_T1</td><td style="min-width:150px">15</td><td style="min-width:150px">52</td><td style="min-width:150px">71</td><td style="min-width:150px">21</td><td style="min-width:150px">13</td><td style="min-width:150px">8</td><td style="min-width:150px">5</td><td style="min-width:150px">3</td><td style="min-width:150px">--</td>
+                    </tr>
+                    <tfoot>
+                      <th class="organization">TOTALS</th>
+                      <td>18</td>
+                      <td>48</td>
+                      <td>85</td>
+                      <td>273</td>
+                      <td>29</td>
+                      <td>81</td>
+                      <td>110</td>
+                      <td>143</td>
+                      <td>3</td>
+                      <td>40</td>
+                    </tfoot>
+                  </table>
+                </div>
+                <a href="./data/table_molecular_concentration.tsv">Download table to TSV file</a>
+                <br>
+              </section>
+            </div>
+            <button class="accordion">Maximum Time to Fractionation</button>
+            <div class="panel">
+              <section class="grid__col--60 grid__col--push10" role="main" id="table">
+                <a id="link_hours_to_fractionation" href="#hours_to_fractionation" onclick="showPlot('table_hours_to_fractionation','plot_hours_to_fractionation','link_hours_to_fractionation')", class="showplot">View as a graph</a>
+                <div id="plot_hours_to_fractionation", style="display:none">
+                  <img src="./graphs/mtde_hours_to_fractionation.svg" alt="hours_to_fractionation" style="width:100vw;">
+                </div>
+                <div id="table_hours_to_fractionation">
+                  <table style = "width:100%">
+                    <thead>
+                      <tr>
+                        <th>Organization</th><th>Project</th><th>2.0</th><th>4.0</th><th>6.0</th><th>24.0</th><th>48.0</th><th>72.0</th><th>168.0</th><th>None</th><th>Not Applicable</th><th>Unknown</th>
+                      </tr>
+                    </thead>
+                    <tr>
+                      <th class="organization">AstraZeneca</th><td>AstraZeneca_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">19</td><td style="min-width:150px">40</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">Biodesix</th><td>Biodesix_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">730</td><td>--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">CytoLumina</th><td>CytoLumina_P0001_T1</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">35</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">EpicSciences</th><td>EpicSciences_P001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">40</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">FoundationMedicine</th><td>FoundationMedicine_ClinAV_T1</td><td>--</td><td>--</td><td style="min-width:150px">212</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">GenomicHealth</th><td>GenomicHealth_P0001_T1</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">72</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">2</td><td>--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">Guardant</th><td>Guardant_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">500</td><td>--</td><td>--</td><td>--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">Lexent</th><td>Lexent_P0001_T1 </td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">MSKCC</th><td>MSKCC_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">40</td><td>--</td><td>--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">Novartis</th><td>Novartis_Contrived1_T1</td><td>--</td><td style="min-width:150px">42</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">PersonalGenomeDx</th><td>PersonalGenomeDx_P0001_T1</td><td>--</td><td style="min-width:150px">30</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">Provista</th><td>Provista_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">18</td><td>--</td><td>--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">ThermoFisher</th><td>ThermoFisher_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">4</td><td>--</td><td>--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">ThermoFisher</th><td>ThermoFisher_P0002_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">16</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">UAMS</th><td>UAMS_P0001_T1</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">8</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">8</td><td>--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">UMich</th><td>UMich_P0001_T1</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">52</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">UMich</th><td>UMich_P0002_T1</td><td style="min-width:150px">30</td><td>--</td><td style="min-width:150px">30</td><td>--</td><td style="min-width:150px">30</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                    </tr>
+                    <tr>
+                      <th class="organization">USC</th><td>USC_OPT1_T1</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">241</td><td style="min-width:150px">76</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                    </tr>
+                    <tfoot>
+                      <th class="organization">TOTALS</th><td>18</td><td>30</td><td>72</td><td>242</td><td>408</td><td>106</td><td>40</td><td>500</td><td>62</td><td>759</td><td>56</td>
+                    </tfoot>
+                  </table>
+                </div>
+                <a href="./data/table_hours_to_fractionation.tsv">Download table to TSV file</a>
+                <br>
+              </section>
+            </div>
+            <button class="accordion">Assay Method</button>
+            <div class="panel">
+              <section class="grid__col--60 grid__col--push10" role="main" id="table">
+                <a id="link_assay_method" href="#assay_method" onclick="showPlot('table_assay_method','plot_assay_method','link_assay_method')", class="showplot">View as a graph</a>
+                <div id="plot_assay_method", style="display:none">
+                  <img src="./graphs/mtde_assay_method.svg" alt="assay_method" style="width:100vw;">
+                </div>
+                <div id="table_assay_method">
+                  <table style = "width:100%">
+                    <thead>
+                      <tr>
+                        <th rowspan="2">Organization</th><th rowspan="2">Project</th><th colspan="3">Immunoassays</th><th colspan="4">PCR Assays</th><th colspan="3">Quantification Assays</th><th colspan="1">Mass Cytometry Assays</th><th colspan="1">Sequencing Assays</th>
+                      </tr>
+                      <th>Enzyme-Linked Immunosorbent Assay (ELISA)</th><th>Immunohistochemistry</th><th>MALDI-TOF Mass Spectrometry</th><th>Amplification-Refactory Mutation System</th><th>BEAMing Digital</th><th>Digital Droplet</th><th>TaqMan</th><th>DNA Electrophoresis</th><th>Fluorometer</th><th>Immunohistochemistry</th><th>Imaging Mass Cytometry</th><th>Targeted Sequencing</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <th class="organization">AstraZeneca</th><td>AstraZeneca_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">59</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Biodesix</th><td>Biodesix_P0001_T1</td><td>--</td><td>--</td><td style="min-width:150px">730</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">CytoLumina</th><td>CytoLumina_P0001_T1</td><td>--</td><td style="min-width:150px">20</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">35</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">EpicSciences</th><td>EpicSciences_P001_T1</td><td>--</td><td style="min-width:150px">3712</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">160</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">FoundationMedicine</th><td>FoundationMedicine_ClinAV_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">371</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">GenomicHealth</th><td>GenomicHealth_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">232</td><td>--</td><td>--</td><td style="min-width:150px">464</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Guardant</th><td>Guardant_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">500</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Lexent</th><td>Lexent_P0001_T1 </td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">MSKCC</th><td>MSKCC_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">40</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Novartis</th><td>Novartis_Contrived1_T1</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">60</td><td style="min-width:150px">60</td><td style="min-width:150px">48</td><td style="min-width:150px">24</td><td>--</td><td style="min-width:150px">195</td><td>--</td><td>--</td><td style="min-width:150px">66</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">PersonalGenomeDx</th><td>PersonalGenomeDx_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">120</td><td>--</td><td>--</td><td style="min-width:150px">30</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Provista</th><td>Provista_P0001_T1</td><td style="min-width:150px">4590</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">ThermoFisher</th><td>ThermoFisher_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">ThermoFisher</th><td>ThermoFisher_P0002_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">16</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">UAMS</th><td>UAMS_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">UMich</th><td>UMich_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">52</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">UMich</th><td>UMich_P0002_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">90</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">USC</th><td>USC_OPT1_T1</td><td>--</td><td style="min-width:150px">59122</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">490</td><td style="min-width:150px">2046</td><td style="min-width:150px">253</td><td>--</td>
+                  </tr>
+                  <tfoot>
+                    <th class="organization">TOTALS</th><td>18</td><td>4590</td><td>62854</td><td>730</td><td>60</td><td>60</td><td>258</td><td>24</td><td>151</td><td>963</td><td>2241</td><td>253</td><td>1401</td>
+                  </tfoot>
+                </table>
+              </div>
+              <a href="./data/table_assay_method.tsv">Download table to TSV file</a>
+              <br>
+            </section>
+          </div>
+          <button class="accordion">Analyte Isolation Method</button>
+          <div class="panel">
+            <section class="grid__col--60 grid__col--push10" role="main" id="table">
+              <a id="link_analyte_isolation_method" href="#analyte_isolation_method" onclick="showPlot('table_analyte_isolation_method','plot_analyte_isolation_method','link_analyte_isolation_method')", class="showplot">View as a graph</a>
+              <div id="plot_analyte_isolation_method", style="display:none">
+                <img src="./graphs/mtde_analyte_isolation_method.svg" alt="analyte_isolation_method" style="width:100vw;">
+              </div>
+              <div id="table_analyte_isolation_method">
+                <table style = "width:100%">
+                  <thead>
+                    <tr>
+                      <th>Organization</th><th>Project</th><th>CTC enumeration with AR staining</th><th>CytoTrapNano CTC Assay</th><th>HD-SCA</th><th>IMC</th><th>MALDI-ToF Mass Spectrometry</th><th>MagMAX Cell-Free DNA Isolation Kit</th><th>Promega Maxwell  Blood</th><th>Promega Maxwell Tissue</th><th>QIAamp Circulating Nucleic Acid Kit</th><th>QIAsymphony</th><th>QIAsymphony automated  DSP Virus/Pathogen Midi Kit</th><th>Qiagen AllPrep</th><th>Qiagen Circulating Nucleic Acid Kit</th><th>Qiagen kit DNA extraction</th><th>Qiagen kit RNA extraction</th><th>Qiagen_cfDNA</th><th>RecoverAll Total Nucleic Acid Isolation Kit for FFPE</th><th>See Horizon Dx cfDNA Reference Standard Protocol</th><th>Serum Isolation, ELISA</th><th>Silica bead-based ctDNA isolation</th><th>ddPCR</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <th class="organization">AstraZeneca</th><td>AstraZeneca_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">20</td><td style="min-width:150px">19</td><td style="min-width:150px">20</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Biodesix</th><td>Biodesix_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">730</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">CytoLumina</th><td>CytoLumina_P0001_T1</td><td>--</td><td style="min-width:150px">55</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">EpicSciences</th><td>EpicSciences_P001_T1</td><td style="min-width:150px">2016</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">FoundationMedicine</th><td>FoundationMedicine_ClinAV_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">212</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">GenomicHealth</th><td>GenomicHealth_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">71</td><td>--</td><td>--</td><td style="min-width:150px">161</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Guardant</th><td>Guardant_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">500</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Lexent</th><td>Lexent_P0001_T1 </td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">MSKCC</th><td>MSKCC_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">40</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Novartis</th><td>Novartis_Contrived1_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">195</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">PersonalGenomeDx</th><td>PersonalGenomeDx_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">30</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Provista</th><td>Provista_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">324</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">ThermoFisher</th><td>ThermoFisher_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">9</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">ThermoFisher</th><td>ThermoFisher_P0002_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">8</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">8</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">UAMS</th><td>UAMS_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">40</td><td style="min-width:150px">8</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">UMich</th><td>UMich_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">52</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">UMich</th><td>UMich_P0002_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">90</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">USC</th><td>USC_OPT1_T1</td><td>--</td><td>--</td><td style="min-width:150px">17127</td><td style="min-width:150px">313</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tfoot>
+                    <th class="organization">TOTALS</th><td>18</td><td>2016</td><td>55</td><td>17127</td><td>313</td><td>730</td><td>8</td><td>20</td><td>19</td><td>286</td><td>500</td><td>40</td><td>161</td><td>90</td><td>40</td><td>8</td><td>52</td><td>8</td><td>9</td><td>324</td><td>212</td><td>30</td>
+                  </tfoot>
+                </table>
+              </div>
+              <a href="./data/table_analyte_isolation_method.tsv">Download table to TSV file</a>
+              <br>
+            </section>
+          </div>
+          <button class="accordion">Tube Type</button>
+          <div class="panel">
+            <section class="grid__col--60 grid__col--push10" role="main" id="table">
+              <a id="link_blood_tube_type" href="#blood_tube_type" onclick="showPlot('table_blood_tube_type','plot_blood_tube_type','link_blood_tube_type')", class="showplot">View as a graph</a>
+              <div id="plot_blood_tube_type", style="display:none">
+                <img src="./graphs/mtde_blood_tube_type.svg" alt="blood_tube_type" style="width:100vw;">
+              </div>
+              <div id="table_blood_tube_type">
+                <table style = "width:100%">
+                  <thead>
+                    <tr>
+                      <th>Organization</th><th>Project</th><th>Acid Citrate Dextrose (ACD)</th><th>CellSave</th><th>EDTA</th><th>Not Applicable</th><th>Streck</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <th class="organization">AstraZeneca</th><td>AstraZeneca_P0001_T1</td><td>--</td><td>--</td><td style="min-width:150px">40</td><td style="min-width:150px">19</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Biodesix</th><td>Biodesix_P0001_T1</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">730</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">CytoLumina</th><td>CytoLumina_P0001_T1</td><td style="min-width:150px">35</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">EpicSciences</th><td>EpicSciences_P001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">40</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">FoundationMedicine</th><td>FoundationMedicine_ClinAV_T1</td><td>--</td><td>--</td><td style="min-width:150px">210</td><td>--</td><td style="min-width:150px">2</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">GenomicHealth</th><td>GenomicHealth_P0001_T1</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">2</td><td style="min-width:150px">72</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Guardant</th><td>Guardant_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">500</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Lexent</th><td>Lexent_P0001_T1 </td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">MSKCC</th><td>MSKCC_P0001_T1</td><td>--</td><td>--</td><td style="min-width:150px">20</td><td>--</td><td style="min-width:150px">20</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Novartis</th><td>Novartis_Contrived1_T1</td><td>--</td><td>--</td><td style="min-width:150px">42</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">PersonalGenomeDx</th><td>PersonalGenomeDx_P0001_T1</td><td>--</td><td>--</td><td style="min-width:150px">15</td><td>--</td><td style="min-width:150px">15</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Provista</th><td>Provista_P0001_T1</td><td>--</td><td>--</td><td style="min-width:150px">18</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">ThermoFisher</th><td>ThermoFisher_P0001_T1</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">1</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">ThermoFisher</th><td>ThermoFisher_P0002_T1</td><td>--</td><td>--</td><td style="min-width:150px">16</td><td style="min-width:150px">16</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">UAMS</th><td>UAMS_P0001_T1</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">8</td><td style="min-width:150px">8</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">UMich</th><td>UMich_P0001_T1</td><td>--</td><td>--</td><td style="min-width:150px">52</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">UMich</th><td>UMich_P0002_T1</td><td>--</td><td style="min-width:150px">18</td><td style="min-width:150px">36</td><td>--</td><td style="min-width:150px">36</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">USC</th><td>USC_OPT1_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">317</td>
+                  </tr>
+                  <tfoot>
+                    <th class="organization">TOTALS</th><td>18</td><td>35</td><td>18</td><td>449</td><td>776</td><td>1010</td>
+                  </tfoot>
+                </table>
+              </div>
+              <a href="./data/table_blood_tube_type.tsv">Download table to TSV file</a>
+              <br>
+            </section>
+          </div>
+          <button class="accordion">Sample Type</button>
+          <div class="panel">
+            <section class="grid__col--60 grid__col--push10" role="main" id="table">
+              <a id="link_clinical_or_contrived" href="#clinical_or_contrived" onclick="showPlot('table_clinical_or_contrived','plot_clinical_or_contrived','link_clinical_or_contrived')", class="showplot">View as a graph</a>
+              <div id="plot_clinical_or_contrived", style="display:none">
+                <img src="./graphs/mtde_clinical_or_contrived.svg" alt="clinical_or_contrived" style="width:100vw;">
+              </div>
+              <div id="table_clinical_or_contrived">
+                <table style = "width:100%">
+                  <thead>
+                    <tr>
+                      <th>Organization</th><th>Project</th><th>Clinical</th><th>Contrived</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <th class="organization">AstraZeneca</th><td>AstraZeneca_P0001_T1</td><td style="min-width:150px">59</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Biodesix</th><td>Biodesix_P0001_T1</td><td style="min-width:150px">730</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">CytoLumina</th><td>CytoLumina_P0001_T1</td><td style="min-width:150px">35</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">EpicSciences</th><td>EpicSciences_P001_T1</td><td style="min-width:150px">80</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">FoundationMedicine</th><td>FoundationMedicine_ClinAV_T1</td><td style="min-width:150px">212</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">GenomicHealth</th><td>GenomicHealth_P0001_T1</td><td style="min-width:150px">71</td><td style="min-width:150px">161</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Guardant</th><td>Guardant_P0001_T1</td><td style="min-width:150px">500</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Lexent</th><td>Lexent_P0001_T1 </td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">MSKCC</th><td>MSKCC_P0001_T1</td><td style="min-width:150px">40</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Novartis</th><td>Novartis_Contrived1_T1</td><td>--</td><td style="min-width:150px">195</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">PersonalGenomeDx</th><td>PersonalGenomeDx_P0001_T1</td><td style="min-width:150px">30</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Provista</th><td>Provista_P0001_T1</td><td style="min-width:150px">324</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">ThermoFisher</th><td>ThermoFisher_P0001_T1</td><td>--</td><td style="min-width:150px">9</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">ThermoFisher</th><td>ThermoFisher_P0002_T1</td><td style="min-width:150px">16</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">UAMS</th><td>UAMS_P0001_T1</td><td style="min-width:150px">48</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">UMich</th><td>UMich_P0001_T1</td><td style="min-width:150px">52</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">UMich</th><td>UMich_P0002_T1</td><td style="min-width:150px">90</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">USC</th><td>USC_OPT1_T1</td><td style="min-width:150px">977</td><td>--</td>
+                  </tr>
+                  <tfoot>
+                    <th class="organization">TOTALS</th><td>18</td><td>3264</td><td>365</td>
+                  </tfoot>
+                </table>
+              </div>
+              <a href="./data/table_clinical_or_contrived.tsv">Download table to TSV file</a>
+              <br>
+            </section>
+          </div>
+          <button class="accordion">Quantification Method</button>
+          <div class="panel">
+            <section class="grid__col--60 grid__col--push10" role="main" id="table">
+              <a id="link_quantification_assay" href="#quantification_assay" onclick="showPlot('table_quantification_assay','plot_quantification_assay','link_quantification_assay')", class="showplot">View as a graph</a>
+              <div id="plot_quantification_assay", style="display:none">
+                <img src="./graphs/mtde_quantification_assay.svg" alt="quantification_assay" style="width:100vw;">
+              </div>
+              <div id="table_quantification_assay">
+                <table style = "width:100%">
+                  <thead>
+                    <tr>
+                      <th>Organization</th><th>Project</th><th>DNA Electrophoresis</th><th>Fluorometer</th><th>Immunohistochemistry</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <th class="organization">AstraZeneca</th><td>AstraZeneca_P0001_T1</td><td style="min-width:150px">59</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Biodesix</th><td>Biodesix_P0001_T1</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">CytoLumina</th><td>CytoLumina_P0001_T1</td><td>--</td><td>--</td><td style="min-width:150px">35</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">EpicSciences</th><td>EpicSciences_P001_T1</td><td>--</td><td>--</td><td style="min-width:150px">160</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">FoundationMedicine</th><td>FoundationMedicine_ClinAV_T1</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">GenomicHealth</th><td>GenomicHealth_P0001_T1</td><td>--</td><td style="min-width:150px">232</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Guardant</th><td>Guardant_P0001_T1</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Lexent</th><td>Lexent_P0001_T1 </td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">MSKCC</th><td>MSKCC_P0001_T1</td><td style="min-width:150px">40</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Novartis</th><td>Novartis_Contrived1_T1</td><td>--</td><td style="min-width:150px">195</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">PersonalGenomeDx</th><td>PersonalGenomeDx_P0001_T1</td><td>--</td><td style="min-width:150px">30</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Provista</th><td>Provista_P0001_T1</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">ThermoFisher</th><td>ThermoFisher_P0001_T1</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">ThermoFisher</th><td>ThermoFisher_P0002_T1</td><td>--</td><td style="min-width:150px">16</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">UAMS</th><td>UAMS_P0001_T1</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">UMich</th><td>UMich_P0001_T1</td><td style="min-width:150px">52</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">UMich</th><td>UMich_P0002_T1</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">USC</th><td>USC_OPT1_T1</td><td>--</td><td style="min-width:150px">490</td><td style="min-width:150px">2046</td>
+                  </tr>
+                  <tfoot>
+                    <th class="organization">TOTALS</th><td>18</td><td>151</td><td>963</td><td>2241</td>
+                  </tfoot>
+                </table>
+              </div>
+              <a href="./data/table_quantification_assay.tsv">Download table to TSV file</a>
+              <br>
+            </section>
+          </div>
+          <button class="accordion">Shipping Temperature</button>
+          <div class="panel">
+            <section class="grid__col--60 grid__col--push10" role="main" id="table">
+              <a id="link_shipping_temperature" href="#shipping_temperature" onclick="showPlot('table_shipping_temperature','plot_shipping_temperature','link_shipping_temperature')", class="showplot">View as a graph</a>
+              <div id="plot_shipping_temperature", style="display:none">
+                <img src="./graphs/mtde_shipping_temperature.svg" alt="shipping_temperature" style="width:100vw;">
+              </div>
+              <div id="table_shipping_temperature">
+                <table style = "width:100%">
+                  <thead>
+                    <tr>
+                      <th>Organization</th><th>Project</th><th>-80.0</th><th>-78.5</th><th>-20.0</th><th>0.0</th><th>4.0</th><th>20.0</th><th>21.5</th><th>22.0</th><th>23.0</th><th>25.0</th><th>27.0</th><th>None</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <th class="organization">AstraZeneca</th><td>AstraZeneca_P0001_T1</td><td style="min-width:150px">59</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Biodesix</th><td>Biodesix_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">730</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">CytoLumina</th><td>CytoLumina_P0001_T1</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">35</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">EpicSciences</th><td>EpicSciences_P001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">40</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">FoundationMedicine</th><td>FoundationMedicine_ClinAV_T1</td><td>--</td><td style="min-width:150px">212</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">GenomicHealth</th><td>GenomicHealth_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">71</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">3</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Guardant</th><td>Guardant_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">500</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Lexent</th><td>Lexent_P0001_T1 </td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">MSKCC</th><td>MSKCC_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">40</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Novartis</th><td>Novartis_Contrived1_T1</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">42</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">PersonalGenomeDx</th><td>PersonalGenomeDx_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">30</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Provista</th><td>Provista_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">18</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">ThermoFisher</th><td>ThermoFisher_P0001_T1</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">ThermoFisher</th><td>ThermoFisher_P0002_T1</td><td>--</td><td>--</td><td style="min-width:150px">16</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">16</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">UAMS</th><td>UAMS_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">16</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">UMich</th><td>UMich_P0001_T1</td><td>--</td><td>--</td><td style="min-width:150px">52</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">UMich</th><td>UMich_P0002_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">36</td><td>--</td><td>--</td><td style="min-width:150px">54</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">USC</th><td>USC_OPT1_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">317</td><td>--</td>
+                  </tr>
+                  <tfoot>
+                    <th class="organization">TOTALS</th><td>18</td><td>59</td><td>212</td><td>68</td><td>78</td><td>36</td><td>40</td><td>500</td><td>125</td><td>16</td><td>16</td><td>317</td><td>821</td>
+                  </tfoot>
+                </table>
+              </div>
+              <a href="./data/table_shipping_temperature.tsv">Download table to TSV file</a>
+              <br>
+            </section>
+          </div>
+          <button class="accordion">Maximum Time to Freezer</button>
+          <div class="panel">
+            <section class="grid__col--60 grid__col--push10" role="main" id="table">
+              <a id="link_hours_to_freezer" href="#hours_to_freezer" onclick="showPlot('table_hours_to_freezer','plot_hours_to_freezer','link_hours_to_freezer')", class="showplot">View as a graph</a>
+              <div id="plot_hours_to_freezer", style="display:none">
+                <img src="./graphs/mtde_hours_to_freezer.svg" alt="hours_to_freezer" style="width:100vw;">
+              </div>
+              <div id="table_hours_to_freezer">
+                <table style = "width:100%">
+                  <thead>
+                    <tr>
+                      <th>Organization</th><th>Project</th><th>0.0</th><th>0.5</th><th>1.0</th><th>2.0</th><th>3.0</th><th>7.0</th><th>24.0</th><th>48.0</th><th>Not Applicable</th><th>Unknown</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <th class="organization">AstraZeneca</th><td>AstraZeneca_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">19</td><td style="min-width:150px">40</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Biodesix</th><td>Biodesix_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">730</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">CytoLumina</th><td>CytoLumina_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">35</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">EpicSciences</th><td>EpicSciences_P001_T1</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">80</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">FoundationMedicine</th><td>FoundationMedicine_ClinAV_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">212</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">GenomicHealth</th><td>GenomicHealth_P0001_T1</td><td>--</td><td style="min-width:150px">232</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Guardant</th><td>Guardant_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">500</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Lexent</th><td>Lexent_P0001_T1 </td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">MSKCC</th><td>MSKCC_P0001_T1</td><td>--</td><td>--</td><td style="min-width:150px">40</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Novartis</th><td>Novartis_Contrived1_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">195</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">PersonalGenomeDx</th><td>PersonalGenomeDx_P0001_T1</td><td>--</td><td>--</td><td style="min-width:150px">30</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Provista</th><td>Provista_P0001_T1</td><td>--</td><td>--</td><td style="min-width:150px">324</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">ThermoFisher</th><td>ThermoFisher_P0001_T1</td><td style="min-width:150px">9</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">ThermoFisher</th><td>ThermoFisher_P0002_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">16</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">UAMS</th><td>UAMS_P0001_T1</td><td style="min-width:150px">16</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">32</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">UMich</th><td>UMich_P0001_T1</td><td style="min-width:150px">52</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">UMich</th><td>UMich_P0002_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">30</td><td style="min-width:150px">30</td><td>--</td><td style="min-width:150px">30</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">USC</th><td>USC_OPT1_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">668</td><td style="min-width:150px">309</td>
+                  </tr>
+                  <tfoot>
+                    <th class="organization">TOTALS</th><td>18</td><td>77</td><td>232</td><td>394</td><td>80</td><td>242</td><td>30</td><td>35</td><td>30</td><td>1219</td><td>1290</td>
+                  </tfoot>
+                </table>
+              </div>
+              <a href="./data/table_hours_to_freezer.tsv">Download table to TSV file</a>
+              <br>
+            </section>
+          </div>
+          <button class="accordion">Composition</button>
+          <div class="panel">
+            <section class="grid__col--60 grid__col--push10" role="main" id="table">
+              <a id="link_composition" href="#composition" onclick="showPlot('table_composition','plot_composition','link_composition')", class="showplot">View as a graph</a>
+              <div id="plot_composition", style="display:none">
+                <img src="./graphs/mtde_composition.svg" alt="composition" style="width:100vw;">
+              </div>
+              <div id="table_composition">
+                <table style = "width:100%">
+                  <thead>
+                    <tr>
+                      <th>Organization</th><th>Project</th><th>Buffy Coat</th><th>Control Analyte</th><th>Human Original Cells</th><th>Peripheral Blood Components NOS</th><th>Peripheral Blood Nucleated Cells</th><th>Peripheral Whole Blood</th><th>Plasma</th><th>Serum</th><th>Solid Tissue</th><th>Unknown</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <th class="organization">AstraZeneca</th><td>AstraZeneca_P0001_T1</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">20</td><td>--</td><td>--</td><td style="min-width:150px">20</td><td>--</td><td style="min-width:150px">19</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Biodesix</th><td>Biodesix_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">730</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">CytoLumina</th><td>CytoLumina_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">35</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">EpicSciences</th><td>EpicSciences_P001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">40</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">FoundationMedicine</th><td>FoundationMedicine_ClinAV_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">4</td><td style="min-width:150px">193</td><td>--</td><td>--</td><td style="min-width:150px">15</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">GenomicHealth</th><td>GenomicHealth_P0001_T1</td><td>--</td><td style="min-width:150px">3</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">71</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Guardant</th><td>Guardant_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">500</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Lexent</th><td>Lexent_P0001_T1 </td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">MSKCC</th><td>MSKCC_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">40</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Novartis</th><td>Novartis_Contrived1_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">42</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">PersonalGenomeDx</th><td>PersonalGenomeDx_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">30</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">Provista</th><td>Provista_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">18</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">ThermoFisher</th><td>ThermoFisher_P0001_T1</td><td>--</td><td style="min-width:150px">4</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">ThermoFisher</th><td>ThermoFisher_P0002_T1</td><td>--</td><td>--</td><td style="min-width:150px">8</td><td style="min-width:150px">8</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">UAMS</th><td>UAMS_P0001_T1</td><td style="min-width:150px">8</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">8</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">UMich</th><td>UMich_P0001_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">52</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">UMich</th><td>UMich_P0002_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">90</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tr>
+                    <th class="organization">USC</th><td>USC_OPT1_T1</td><td>--</td><td>--</td><td>--</td><td>--</td><td style="min-width:150px">317</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                  </tr>
+                  <tfoot>
+                    <th class="organization">TOTALS</th><td>18</td><td>8</td><td>7</td><td>8</td><td>28</td><td>392</td><td>44</td><td>998</td><td>748</td><td>27</td><td>15</td>
+                  </tfoot>
+                </table>
+              </div>
+              <a href="./data/table_composition.tsv">Download table to TSV file</a>
+              <br>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  </html>
+  <script src="./js/accordion.js"></script>
+  <script src="./js/showPlot.js"></script>
